@@ -317,15 +317,16 @@ client.on('message', message => {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (4)**')
-        .addField('4play', 'لتشغيل اغنية')
-        .addField('4join', 'دخول رومك الصوتي')
-        .addField('4disconnect', 'الخروج من رومك الصوتي')
-        .addField('4skip', 'تخطي الأغنية')
-        .addField('4pause', 'ايقاف الاغنية مؤقتا')
-        .addField('4resume', 'تكملة الاغنية')
-        .addField('4queue', 'اظهار قائمة التشغيل')
-        .addField('4np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('(general_commands) لاظهار الاوامر العامة')
+        .addField('Play', 'لتشغيل اغنية')
+        .addField('Join', 'دخول رومك الصوتي')
+        .addField('Disconnect', 'الخروج من رومك الصوتي')
+        .addField('Skip', 'تخطي الأغنية')
+        .addField('Pause', 'ايقاف الاغنية مؤقتا')
+        .addField('Resume', 'تكملة الاغنية')
+        .addField('Queue', 'اظهار قائمة التشغيل')
+        .addField('Np', 'اظهار الاغنية اللي انت مشغلها حاليا')
+        .addField('Repart','لأعادة الاغنية')
+        .setFooter('(General_commands) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
 });
@@ -349,7 +350,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`4play | Forest Music`,"http://twitch.tv/Forest Server")
+client.user.setGame(`4play | Verse Music`,"http://twitch.tv/Forest Server")
 client.user.setStatus("dnd")
 });
 
